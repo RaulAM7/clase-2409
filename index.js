@@ -1,5 +1,4 @@
-
-
+/*
 
 for (let i =0 ; i < 10; i++){
     let idTimeOut = setTimeout(function() {
@@ -38,3 +37,5 @@ setInterval(() => {
     //box.style.height = boxTop + 'px' // Px para darle las unidades
     //box.style.width = boxTop + 'px' // Px para darle las unidades
 }, 100);
+
+*/
