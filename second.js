@@ -14,7 +14,7 @@ setTimeout(functionRef, delay, param1, param2,  … , paramN)
 
 // Ejemplo de TimeOut
 
-
+/*
 const names = ['Raul', 'Marta',"pepe","antonio","hola","juanito"] 
 
 function sayHello(name){
@@ -39,3 +39,27 @@ const clearAll = setTimeout(function(){
     console.log('Interval cleared')
     clearTimeout(saludoTimeOut)
 }, 2000)
+
+*/
+
+const box1 = document.getElementById('box1')
+const box2 = document.getElementById('box2')
+
+let topPosition = 0
+
+function moverCaja(box, paso){
+    topPosition += paso
+    box.style.top = topPosition + 'px'
+}
+
+
+const moverCajaUNOInterval = setInterval(function(){
+    moverCaja(box1, 5)
+    console.log('La caja ha dado un paso')
+}, 100)
+
+
+const stopCaja = setTimeout(function(){
+    clearInterval(moverCajaUNOInterval)
+    console.log('LA CAJA SE HA PARADO')
+}, 10000)
